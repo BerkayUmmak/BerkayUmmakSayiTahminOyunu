@@ -360,7 +360,7 @@ namespace Gazi.DongulerApp
             //     Sayı Tahmin Oyunu Ödev   //
 
 
-            int sayac = 100; int minseviye = 1; int max1 = 10; int max2 = 40; int max3 = 100; int max4 = 1000; int lv1 = 10; int lv2 = 20; int lv3 = 50; int lv4 = 100;
+            int sayac = 100; int minseviye = 1; int max1 = 10; int max2 = 40; int max3 = 100; int max4 = 1000; int minus=0;
             Console.WriteLine("SAYI TAHMİN OYUNUNA HOŞGELDİNİZ.");
             Console.WriteLine("Lütfen seviye seçiniz.(1/2/3/4)");
             int seviye = int.Parse(Console.ReadLine());
@@ -369,16 +369,19 @@ namespace Gazi.DongulerApp
             switch (seviye)
             {
                 case 1:
-                    
+                    minus = 10;
                     sayi = rnd.Next(minseviye, max1);
                     break;
                 case 2:
+                    minus = 25;
                      sayi = rnd.Next(minseviye, max2);
                     break;
                 case 3:
+                    minus = 50;
                      sayi = rnd.Next(minseviye, max3);
                     break;
                 case 4:
+                    minus = 100;
                      sayi = rnd.Next(minseviye, max4);
                     break;
             }
@@ -411,17 +414,17 @@ namespace Gazi.DongulerApp
                     Console.WriteLine("Tekrar dene.");
                     if (seviye == 1)
                     {
-                        sayac=sayac-lv1;
+                        sayac=sayac-minus;
                     }
                     else if (seviye == 2)
                     {
-                        sayac=sayac-lv2 ;
+                        sayac=sayac-minus ;
                     }
                     else if (seviye == 3)
                     {
-                        sayac=sayac-lv3;
+                        sayac=sayac-minus;
                     }
-                    else { sayac =sayac-lv4; }
+                    else { sayac =sayac-minus; }
 
 
                 }
