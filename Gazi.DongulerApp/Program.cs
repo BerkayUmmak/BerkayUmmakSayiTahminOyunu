@@ -396,18 +396,8 @@ namespace Gazi.DongulerApp
 
                 if (sayi == tahmin)
                 {
-                    Console.WriteLine($"Kazandın.\n Kalan canınız: {sayac-10}");
-                    //Console.ReadKey();
-                    //Console.Clear();
-
-                    //Console.WriteLine("Devam etmek istiyor musunuz? (E/H)");
-                    //string cevab=Console.ReadLine();
-                    //if (cevab == "E")
-                    //{
-                    //    Console.WriteLine("Bir sonraki seviyeye geçiliyor.");
-                    //    sayi = 0;
-                    //}
-                    //else { break; }
+                    Console.WriteLine($"Kazandın.\nKalan canınız: {sayac}");
+                   
                 }
                 else
                 {
@@ -426,9 +416,7 @@ namespace Gazi.DongulerApp
 
             } while (sayi != tahmin);
             
-            //puanlama sistemi
-            //kolay seviyede 5 er 5 er puan azalacak, orta seviyede 10 ar 10 ar, zorda 20şer 20şer,imkansızda 100 can azalacak.
-            //sayaç ayarlayacaksın.
+          
 
 
 
