@@ -396,7 +396,7 @@ namespace Gazi.DongulerApp
 
                 if (sayi == tahmin)
                 {
-                    Console.WriteLine("Tebrikler Kazandın.");
+                    Console.WriteLine($"Kazandın.\n Kalan canınız: {sayac-10}");
                     //Console.ReadKey();
                     //Console.Clear();
 
@@ -412,19 +412,7 @@ namespace Gazi.DongulerApp
                 else
                 {
                     Console.WriteLine("Tekrar dene.");
-                    if (seviye == 1)
-                    {
-                        sayac=sayac-minus;
-                    }
-                    else if (seviye == 2)
-                    {
-                        sayac=sayac-minus ;
-                    }
-                    else if (seviye == 3)
-                    {
-                        sayac=sayac-minus;
-                    }
-                    else { sayac =sayac-minus; }
+                    sayac -= minus;
 
 
                 }
@@ -437,7 +425,7 @@ namespace Gazi.DongulerApp
 
 
             } while (sayi != tahmin);
-            Console.WriteLine(sayac-10);
+            
             //puanlama sistemi
             //kolay seviyede 5 er 5 er puan azalacak, orta seviyede 10 ar 10 ar, zorda 20şer 20şer,imkansızda 100 can azalacak.
             //sayaç ayarlayacaksın.
