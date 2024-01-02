@@ -389,6 +389,7 @@ namespace Gazi.DongulerApp
 
 
             int tahmin;
+
             do
             {
                 Console.WriteLine("Sayı gir:");
